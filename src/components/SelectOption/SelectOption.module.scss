@@ -1,0 +1,36 @@
+
+
+.container {
+
+    display: flex;
+    justify-content: space-between;
+    gap: .7em;
+    grid-area: option;
+
+    border: 1px solid var(--clr-neutral-700);
+    border-left-color: transparent;
+    border-right-color: transparent;
+    padding: 0 1em;
+}
+
+@media only screen and  (min-width: 600px) {
+
+    .container {
+       flex-direction: column;
+ 
+       border: none;
+
+       max-width: 50vw;
+       align-self: center;
+   
+    }
+    
+}
+@media only screen and  (min-width: 1000px) {
+
+    .container {
+       min-width: 400px;
+       justify-self: end;
+    }
+    
+}

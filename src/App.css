@@ -1,38 +1,58 @@
-.App {
-  text-align: center;
+:root {
+  --clr-nav: orange;
+
+  --clr-neutral-100: hsl(0,0%,100%);
+  --clr-neutral-200: #FFFFDB;
+  
+  --clr-neutral-300: #9B9BA7;
+  --clr-neutral-700: #37374E;
+  --clr-neutral-900: hsl(240, 66%, 8%);
+
+  
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
+#root {
+ 
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
 }
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;700&display=swap');
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+body {
+  font-family: 'League Spartan', serif;
+  color: var(--clr-neutral-100);
+  background-color: var(--clr-neutral-900);
+  background-image: url('../src/assets/background-stars.svg');
+  height: 100%;
 }
-
-.App-link {
-  color: #61dafb;
+.active {
+  color: var(--clr-neutral-100);
 }
+#root {
+  
+min-height: 100vh;
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
+}
+ul {
+
+  padding-left: 0;
+  list-style-position: inside;
+}
+ul,
+ol {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  
+}
+@media only screen and  (min-width: 900px) {
+  .active{
+    background-color: var(--clrPlanet);
   }
 }

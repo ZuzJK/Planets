@@ -1,0 +1,35 @@
+.grid {
+    
+}
+
+@media only screen and  (min-width: 600px) {
+
+    .grid {
+        display: grid;
+        grid-template-areas: 
+        "img img"
+        "text option"
+        "statistics statistics";
+        width: 1020px;
+    }
+    .flex {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+       
+    }
+}
+
+@media only screen and  (min-width: 900px) {
+
+    .grid {
+        grid-template-areas: 
+        "img text"
+        "img option"
+        "statistics statistics";
+    }
+    .flex {
+        min-height: 90vh;
+    }
+    
+}

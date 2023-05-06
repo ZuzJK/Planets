@@ -1,0 +1,40 @@
+.flex {
+    display: flex;  
+    justify-content: space-between;
+    align-items: center;
+}
+.lead {
+    text-transform: uppercase;
+}
+.header {
+    border-bottom: 1px solid var(--clr-neutral-700);
+    padding: 1em;
+
+}
+@media only screen and  (min-width: 600px) and (max-width: 900px) {
+
+    .flex{
+        flex-direction: column;
+        justify-content: stretch;
+        align-items: center;
+        gap: 2.7em;
+    }
+    .header {
+        border-bottom: 1px solid var(--clr-neutral-700);
+        padding: 2.2em 3em;
+        
+    }
+    
+}
+@media only screen and  (min-width: 900px)  {
+
+    .flex{
+
+    }
+    .header {
+
+        padding: 0;
+        
+    }
+    
+}
