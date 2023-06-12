@@ -5,9 +5,7 @@ interface IBasicData {
     name:string | undefined,
     content: string,  
 }
-const BasicData = ({name ="No Planet", content}: IBasicData) => {
-
-    return (
+const BasicData = ({name ="No Planet", content}: IBasicData) => 
             <article className={styles.text}>
                 <h2 className={styles.title}>{name}</h2>
                 <p>
@@ -16,7 +14,5 @@ const BasicData = ({name ="No Planet", content}: IBasicData) => {
                     }
                 </p>
             </article>
-    );
-};
 
 export default BasicData;

@@ -9,6 +9,7 @@ interface IMenu {
 const Menu = ({isOpen, clickFn}: IMenu) => 
         <button 
             className={styles.button} 
+            aria-label='Main menu'
             aria-expanded={isOpen} 
             aria-controls="Main-menu"
             onClick={clickFn}>

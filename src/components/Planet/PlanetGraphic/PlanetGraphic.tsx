@@ -10,14 +10,14 @@ const PlanetGraphic = ({planetName, typeImg = 'overview'}:IPlanetGraphic) => {
     const planet = planetImg.find(({name}) => name === planetName);
 
     return (
-            <figure className={styles.a}>
+            <figure className={styles.wrapper}>
                 <img 
                     src={typeImg==='structure'?planet?.img.structure:planet?.img.content} 
                     alt='' 
                     className={styles.image}
                 />
                 {
-                    typeImg === 'geology' && <img className={styles.b} src={planet?.img.geology} alt='' />
+                    typeImg === 'geology' && <img className={styles.image2} src={planet?.img.geology} alt='' />
                 }
             </figure>
 

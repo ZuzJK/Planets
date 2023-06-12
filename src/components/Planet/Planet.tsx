@@ -8,21 +8,26 @@ import PlanetGraphic from './PlanetGraphic/PlanetGraphic';
 import styles from './Planet.module.scss';
 
 interface IPlanetProps {
-    setTheme(planetName: string): void
+    setTheme(planetName: string): void;
+    planetName?:string
 }
 
 const Planet = ({setTheme}: IPlanetProps) => {
-    const { name } = useParams();
+    let { name } = useParams();
+
+    if(name===undefined) {
+        name = 'Mercury';
+        console.log('I am undefined lala')
+    }
+
     const [searchParams, setSearchParams] = useSearchParams();
 
     const [search,setSearch] = useState<any>(searchParams.get('category')||'overview');
-    
     
     const handleClick = (e:any) => {
         if(e.target.value){
             setSearchParams({category:e.target.value});
         }
-     
     };
     useEffect(()=>{
         if(name){
@@ -34,6 +39,7 @@ const Planet = ({setTheme}: IPlanetProps) => {
         if(searchParams) {
             setSearch(searchParams.get('category'))
         }
+
     },[searchParams]);
 
     const planetData = data.find(planet => planet.name === name);

@@ -1,7 +1,3 @@
-.grid {
-    
-}
-
 @media only screen and  (min-width: 600px) {
 
     .grid {
@@ -21,7 +17,6 @@
 }
 
 @media only screen and  (min-width: 900px) {
-
     .grid {
         grid-template-areas: 
         "img text"
@@ -31,5 +26,4 @@
     .flex {
         min-height: 90vh;
     }
-    
 }

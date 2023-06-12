@@ -1,4 +1,3 @@
-import React from 'react';
 import NavItem from './NavItem/NavItem';
 import styles from './Nav.module.scss';
 

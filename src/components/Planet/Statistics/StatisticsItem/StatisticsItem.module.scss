@@ -1,15 +1,10 @@
-
 .card {
-
     display: flex;
     justify-content: space-between;
-    
     align-items: baseline;
+    flex: 1;
     padding: 1.5em;
     border: 1px solid var(--clr-neutral-700);
-
-    flex: 1;
-
     text-transform: uppercase;
 }
 
@@ -17,7 +12,6 @@
 .content {
     margin: 0;
 }
-//zobacz czy  po globalnym dodaniu m0  bedzie to nadal potrzebne
 
 .title {
     color: var(--clr-neutral-300);
@@ -25,20 +19,15 @@
 }
 
 .content {
-  //  font-size: 2.3rem;
   font-weight: 700;
 }
 @media only screen and  (min-width: 600px) {
-
     .card {
        flex-direction: column;
        gap: 1em;
     }
     .content {
         font-size: 2.3rem;
-    }
-    .title {
-      //  font-size: 1.2rem;
     }
 }
 

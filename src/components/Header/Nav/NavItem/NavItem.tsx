@@ -16,9 +16,7 @@ const NavItem = ({item}:{item: string}) => {
                     backgroundColor:theme[item]}}
                 >
             </span> 
-            <NavLink 
-                    to={`/planets/${item}/?category=overview`}
-                    className={styles.a}>
+            <NavLink to={`/planets/${item}/?category=overview`}>
                 {item}
             </NavLink>
         </li>

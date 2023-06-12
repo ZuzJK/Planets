@@ -3,18 +3,11 @@
 
   --clr-neutral-100: hsl(0,0%,100%);
   --clr-neutral-200: #FFFFDB;
-  
   --clr-neutral-300: #9B9BA7;
   --clr-neutral-700: #37374E;
   --clr-neutral-900: hsl(240, 66%, 8%);
-
-  
 }
 
-#root {
- 
-
-}
 @import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;700&display=swap');
 
 body {
@@ -24,16 +17,10 @@ body {
   background-image: url('../src/assets/background-stars.svg');
   height: 100%;
 }
-.active {
-  color: var(--clr-neutral-100);
-}
 #root {
-  
-min-height: 100vh;
-
+  min-height: 100vh;
 }
 ul {
-
   padding-left: 0;
   list-style-position: inside;
 }
@@ -49,10 +36,9 @@ a {
 *::after {
   box-sizing: border-box;
   margin: 0;
-  
 }
 @media only screen and  (min-width: 900px) {
   .active{
-    background-color: var(--clrPlanet);
+    border-top: 3px var(--clrPlanet) solid;
   }
 }

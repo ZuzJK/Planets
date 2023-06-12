@@ -1,12 +1,8 @@
-
-
 .text {
     grid-area: text;
     text-align: center;
-
     padding: 1em;
     line-height: 1.4;
-
  p{
     color: var(--clr-neutral-300);
  }
@@ -19,18 +15,15 @@
 }
 
 @media only screen and  (min-width: 600px) {
-
     .text {
         max-width: 50vw;
         text-align: left;
     }
     .title {
-
         transform:scaleY(1.1);
     }
 }
 @media only screen and  (min-width: 1000px) {
-
     .text {
         justify-self: end;
         max-width: 400px;
